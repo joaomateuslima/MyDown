@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "924051962604",
+    "project_id": "mydown-876cf",
+    "storage_bucket": "mydown-876cf.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:924051962604:android:e7ffee35b99a3126f0c3c9",
+        "android_client_info": {
+          "package_name": "com.example.my_down_project"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAEHCMDvsz4A8PumIpErR02cKbT84e5FD8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
