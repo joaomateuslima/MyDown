@@ -15,16 +15,16 @@ class FoodPageState extends State<FoodPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
-        title: Text(
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
+        title: const Text(
           "Alimentação",
           style: TextStyle(
-            color: const Color.fromARGB(255, 255, 255, 255),
+            color: Color.fromARGB(255, 255, 255, 255),
             fontSize: 20,
           ),
         ),
       ),
-      backgroundColor: Color.fromARGB(255, 213, 251, 254),
+      backgroundColor: const Color.fromARGB(255, 213, 251, 254),
       body: Padding(
         padding: const EdgeInsets.all(5.0),
         child: GridView.count(
@@ -48,10 +48,10 @@ class FoodPageState extends State<FoodPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Pratos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -80,10 +80,10 @@ class FoodPageState extends State<FoodPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Cardápio",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -101,7 +101,7 @@ class FoodPageState extends State<FoodPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => FoodGame()),
+                  MaterialPageRoute(builder: (context) => const FoodGame()),
                 );
               },
               child: Container(
@@ -112,10 +112,10 @@ class FoodPageState extends State<FoodPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "ligue as Comidinhas",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 18,
                       ),
                     ),
@@ -144,10 +144,10 @@ class FoodPageState extends State<FoodPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Dicas",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -176,10 +176,10 @@ class FoodPageState extends State<FoodPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Mào na massa",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -208,10 +208,10 @@ class FoodPageState extends State<FoodPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Temperos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),

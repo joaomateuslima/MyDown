@@ -14,8 +14,8 @@ class TalkPageState extends State<TalkPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(171, 255, 247, 0),
-        title: Text(
+        backgroundColor: const Color.fromARGB(171, 255, 247, 0),
+        title: const Text(
           "Fala",
           style: TextStyle(
             color: Color.fromARGB(255, 0, 0, 0),
@@ -36,6 +36,7 @@ class TalkPageState extends State<TalkPage> {
               onTap: () {
                 Navigator.push(
                   context,
+                  // ignore: prefer_const_constructors
                   MaterialPageRoute(builder: (context) => WordsGame()),
                 );
               },
@@ -47,10 +48,10 @@ class TalkPageState extends State<TalkPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Jogo das Palavras",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -79,10 +80,10 @@ class TalkPageState extends State<TalkPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Frases",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 26,
                       ),
                     ),
@@ -111,10 +112,10 @@ class TalkPageState extends State<TalkPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Roteiro de teatro",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 22,
                       ),
                     ),
@@ -143,10 +144,10 @@ class TalkPageState extends State<TalkPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Jogo de Sílabas",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 22,
                       ),
                     ),
@@ -175,10 +176,10 @@ class TalkPageState extends State<TalkPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Exercícios Bucais",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -207,10 +208,10 @@ class TalkPageState extends State<TalkPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Rimas e Canções",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),

@@ -1,6 +1,5 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:my_down_project/auth/auth.dart';
 import 'package:my_down_project/firebase_options.dart';
 import 'package:my_down_project/pages/mydown.dart';
 

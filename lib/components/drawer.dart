@@ -12,7 +12,7 @@ class MyDrawer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Drawer(
-      backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+      backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -40,7 +40,8 @@ class MyDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => ExercisePage()),
+                    MaterialPageRoute(
+                        builder: (context) => const ExercisePage()),
                   );
                 },
               ),
@@ -51,7 +52,7 @@ class MyDrawer extends StatelessWidget {
                 onTap: () {
                   Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => Page1()),
+                    MaterialPageRoute(builder: (context) => const Page1()),
                   );
                 },
               ),

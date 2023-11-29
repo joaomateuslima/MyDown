@@ -33,6 +33,7 @@ class _LoginPageState extends State<LoginPage> {
       );
 
       // Pop loading circle
+      // ignore: use_build_context_synchronously
       Navigator.pop(context);
     } catch (e) {
       // Pop loading circle
@@ -71,7 +72,7 @@ class _LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+      backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
       body: SingleChildScrollView(
         child: Center(
           child: Padding(
@@ -92,7 +93,7 @@ class _LoginPageState extends State<LoginPage> {
                 const SizedBox(height: 40),
 
                 // welcome back message
-                Text(
+                const Text(
                   "Bem-Vindo(a) ao MyDown!",
                   style: TextStyle(
                     color: Colors.white,
@@ -126,7 +127,7 @@ class _LoginPageState extends State<LoginPage> {
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Ainda não possui uma conta?",
                       style: TextStyle(
                         color: Colors.white,

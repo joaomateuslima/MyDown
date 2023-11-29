@@ -60,8 +60,8 @@ class _HomePageState extends State<HomePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
-        title: Text('My Down'),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
+        title: const Text('My Down'),
         centerTitle: true,
       ),
       drawer: MyDrawer(
@@ -136,7 +136,7 @@ class _HomePageState extends State<HomePage> {
             //logged in as
             Text(
               "Bem vindo: ${currentUser.email!}",
-              style: TextStyle(color: Color.fromRGBO(0, 31, 89, 1.0)),
+              style: const TextStyle(color: Color.fromRGBO(0, 31, 89, 1.0)),
             ),
 
             const SizedBox(

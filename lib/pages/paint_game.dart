@@ -1,26 +1,31 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(ColoringGameApp());
+  runApp(const ColoringGameApp());
 }
 
 class ColoringGameApp extends StatelessWidget {
+  const ColoringGameApp({super.key});
+
   @override
   Widget build(BuildContext context) {
-    return MaterialApp(
+    return const MaterialApp(
       home: ColoringPage(),
     );
   }
 }
 
 class ColoringPage extends StatefulWidget {
+  const ColoringPage({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _ColoringPageState createState() => _ColoringPageState();
 }
 
 class _ColoringPageState extends State<ColoringPage> {
   Color _selectedColor = Colors.red;
-  final AssetImage _flowerImage = AssetImage(
+  final AssetImage _flowerImage = const AssetImage(
     'lib/assets/images/Bola.png',
   );
 
@@ -28,7 +33,7 @@ class _ColoringPageState extends State<ColoringPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Jogo de Colorir'),
+        title: const Text('Jogo de Colorir'),
       ),
       body: Center(
         child: Column(
@@ -54,7 +59,8 @@ class ColorPicker extends StatelessWidget {
   final Color selectedColor;
   final Function(Color) onColorSelected;
 
-  ColorPicker({required this.selectedColor, required this.onColorSelected});
+  const ColorPicker(
+      {super.key, required this.selectedColor, required this.onColorSelected});
 
   @override
   Widget build(BuildContext context) {
@@ -72,8 +78,8 @@ class ColorPicker extends StatelessWidget {
           Colors.purple,
         ]),
         buildColorRow([
-          Color.fromARGB(255, 0, 230, 247),
-          Color.fromARGB(255, 152, 138, 228),
+          const Color.fromARGB(255, 0, 230, 247),
+          const Color.fromARGB(255, 152, 138, 228),
           Colors.brown,
         ]),
       ],
@@ -100,7 +106,7 @@ class ColorPicker extends StatelessWidget {
       child: Container(
         width: 60,
         height: 60,
-        margin: EdgeInsets.all(20),
+        margin: const EdgeInsets.all(20),
         decoration: BoxDecoration(
           color: color,
           border: Border.all(

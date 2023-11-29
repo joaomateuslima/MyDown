@@ -12,7 +12,7 @@ class Page1State extends State<Page1> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         title: const Text("Consultoria"),
       ),
       body: Padding(
@@ -26,7 +26,8 @@ class Page1State extends State<Page1> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => PsicoPage()),
+                      MaterialPageRoute(
+                          builder: (context) => const PsicoPage()),
                     );
                   },
                   child: Container(
@@ -121,7 +122,7 @@ class Page1State extends State<Page1> {
                   onTap: () {
                     Navigator.push(
                       context,
-                      MaterialPageRoute(builder: (context) => FonoPage()),
+                      MaterialPageRoute(builder: (context) => const FonoPage()),
                     );
                   },
                   child: Container(
@@ -317,7 +318,7 @@ class FonoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         title: const Text('Fonoaudióloga'),
       ),
       body: const Center(
@@ -337,7 +338,7 @@ class PsicomoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         title: const Text('Psicomotricista'),
       ),
       body: const Center(
@@ -357,7 +358,7 @@ class PsicoPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         title: const Text('Psicóloga'),
       ),
       body: const Center(

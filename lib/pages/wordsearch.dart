@@ -1,10 +1,12 @@
 import 'package:flutter/material.dart';
 
 void main() {
-  runApp(MyApp());
+  runApp(const MyApp());
 }
 
 class MyApp extends StatelessWidget {
+  const MyApp({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -13,8 +15,10 @@ class MyApp extends StatelessWidget {
   }
 }
 
+// ignore: use_key_in_widget_constructors
 class WordSearch extends StatefulWidget {
   @override
+  // ignore: library_private_types_in_public_api
   _WordSearchState createState() => _WordSearchState();
 }
 
@@ -41,7 +45,7 @@ class _WordSearchState extends State<WordSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Caça-Palavras'),
+        title: const Text('Caça-Palavras'),
       ),
       body: Center(
         child: Column(
@@ -68,18 +72,18 @@ class _WordSearchState extends State<WordSearch> {
                         ),
                         child: Text(
                           grid[i][j],
-                          style: TextStyle(fontSize: 20),
+                          style: const TextStyle(fontSize: 20),
                         ),
                       ),
                     ),
                 ],
               ),
-            SizedBox(height: 20),
-            Text(
+            const SizedBox(height: 20),
+            const Text(
               'Palavras para encontrar:',
               style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
             ),
-            SizedBox(height: 10),
+            const SizedBox(height: 10),
             Wrap(
               children: words
                   .map(

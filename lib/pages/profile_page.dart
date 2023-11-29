@@ -22,17 +22,17 @@ class _ProfilePageState extends State<ProfilePage> {
     await showDialog(
       context: context,
       builder: (context) => AlertDialog(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         title: Text(
           'Editar $field',
           style: const TextStyle(color: Colors.white),
         ),
         content: TextField(
           autofocus: true,
-          style: TextStyle(color: Colors.white),
+          style: const TextStyle(color: Colors.white),
           decoration: InputDecoration(
             hintText: 'Insira $field',
-            hintStyle: TextStyle(color: Colors.grey),
+            hintStyle: const TextStyle(color: Colors.grey),
           ),
           onChanged: (value) {
             newValue = value;
@@ -41,7 +41,7 @@ class _ProfilePageState extends State<ProfilePage> {
         actions: [
           //cancel button
           TextButton(
-            child: Text(
+            child: const Text(
               'Cancel',
               style: TextStyle(color: Colors.white),
             ),
@@ -50,7 +50,7 @@ class _ProfilePageState extends State<ProfilePage> {
 
           //save button
           TextButton(
-            child: Text(
+            child: const Text(
               'Save',
               style: TextStyle(color: Colors.white),
             ),
@@ -72,8 +72,8 @@ class _ProfilePageState extends State<ProfilePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        title: Text('Meu Perfil'),
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        title: const Text('Meu Perfil'),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
       ),
       body: StreamBuilder<DocumentSnapshot>(
         stream: FirebaseFirestore.instance

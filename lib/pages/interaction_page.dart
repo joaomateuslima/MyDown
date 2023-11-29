@@ -14,11 +14,11 @@ class InteractionPageState extends State<InteractionPage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 84, 187, 0),
-        title: Text(
+        backgroundColor: const Color.fromARGB(255, 84, 187, 0),
+        title: const Text(
           "Interação social",
           style: TextStyle(
-            color: const Color.fromARGB(255, 255, 255, 255),
+            color: Color.fromARGB(255, 255, 255, 255),
             fontSize: 25,
           ),
         ),
@@ -48,10 +48,10 @@ class InteractionPageState extends State<InteractionPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Família",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 28,
                       ),
                     ),
@@ -80,10 +80,10 @@ class InteractionPageState extends State<InteractionPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Crianças",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -112,10 +112,10 @@ class InteractionPageState extends State<InteractionPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Pedagogos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -144,10 +144,10 @@ class InteractionPageState extends State<InteractionPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Adultos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -176,10 +176,10 @@ class InteractionPageState extends State<InteractionPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Profissionais",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -208,10 +208,10 @@ class InteractionPageState extends State<InteractionPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Amigos Atípicos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),

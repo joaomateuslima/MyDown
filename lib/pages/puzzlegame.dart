@@ -1,14 +1,16 @@
 import 'package:flutter/material.dart';
 
 class PuzzleGame extends StatelessWidget {
+  const PuzzleGame({super.key});
+
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         appBar: AppBar(
-          title: Text('Quebra-Cabeças'),
+          title: const Text('Quebra-Cabeças'),
         ),
-        body: SingleChildScrollView(
+        body: const SingleChildScrollView(
           child: PuzzleGrid(),
         ),
       ),
@@ -17,7 +19,10 @@ class PuzzleGame extends StatelessWidget {
 }
 
 class PuzzleGrid extends StatefulWidget {
+  const PuzzleGrid({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _PuzzleGridState createState() => _PuzzleGridState();
 }
 
@@ -62,7 +67,7 @@ class _PuzzleGridState extends State<PuzzleGrid> {
             itemCount: pieces.length,
             shrinkWrap: true,
             physics:
-                NeverScrollableScrollPhysics(), // Impede a rolagem da grade
+                const NeverScrollableScrollPhysics(), // Impede a rolagem da grade
             itemBuilder: (context, index) {
               return GestureDetector(
                 onTap: () {
@@ -79,11 +84,12 @@ class _PuzzleGridState extends State<PuzzleGrid> {
                         context: context,
                         builder: (BuildContext context) {
                           return AlertDialog(
-                            title: Text('Parabéns!'),
-                            content: Text('Você resolveu o quebra-cabeça.'),
+                            title: const Text('Parabéns!'),
+                            content:
+                                const Text('Você resolveu o quebra-cabeça.'),
                             actions: [
                               TextButton(
-                                child: Text('Jogar Novamente'),
+                                child: const Text('Jogar Novamente'),
                                 onPressed: () {
                                   shufflePuzzle();
                                   Navigator.of(context).pop();
@@ -107,10 +113,10 @@ class _PuzzleGridState extends State<PuzzleGrid> {
               );
             },
           ),
-          SizedBox(height: 20),
+          const SizedBox(height: 20),
           ElevatedButton(
             onPressed: isSolved() ? null : shufflePuzzle,
-            child: Text('Embaralhar'),
+            child: const Text('Embaralhar'),
           ),
         ],
       ),

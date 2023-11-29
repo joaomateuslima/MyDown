@@ -15,16 +15,16 @@ class CognitivePageState extends State<CognitivePage> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Color.fromARGB(255, 100, 46, 248),
-        title: Text(
+        backgroundColor: const Color.fromARGB(255, 100, 46, 248),
+        title: const Text(
           "Área cognitiva",
           style: TextStyle(
-            color: const Color.fromARGB(255, 255, 255, 255),
+            color: Color.fromARGB(255, 255, 255, 255),
             fontSize: 25,
           ),
         ),
       ),
-      backgroundColor: Color.fromARGB(255, 154, 127, 223),
+      backgroundColor: const Color.fromARGB(255, 154, 127, 223),
       body: Padding(
         padding: const EdgeInsets.all(5.0),
         child: GridView.count(
@@ -37,7 +37,7 @@ class CognitivePageState extends State<CognitivePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => MemoryGame()),
+                  MaterialPageRoute(builder: (context) => const MemoryGame()),
                 );
               },
               child: Container(
@@ -48,10 +48,10 @@ class CognitivePageState extends State<CognitivePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Jogo da Memória",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -80,10 +80,10 @@ class CognitivePageState extends State<CognitivePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Caça-Palavras",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 26,
                       ),
                     ),
@@ -112,10 +112,10 @@ class CognitivePageState extends State<CognitivePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Charadas",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -144,10 +144,10 @@ class CognitivePageState extends State<CognitivePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Invenções",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -176,10 +176,10 @@ class CognitivePageState extends State<CognitivePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Curiosidades",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 26,
                       ),
                     ),
@@ -208,10 +208,10 @@ class CognitivePageState extends State<CognitivePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Matemática",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),

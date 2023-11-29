@@ -16,10 +16,10 @@ class LeisurePageState extends State<LeisurePage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 107, 0),
-        title: Text(
+        title: const Text(
           "Lazer",
           style: TextStyle(
-            color: const Color.fromARGB(255, 255, 255, 255),
+            color: Color.fromARGB(255, 255, 255, 255),
             fontSize: 25,
           ),
         ),
@@ -37,7 +37,7 @@ class LeisurePageState extends State<LeisurePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => ColoringPage()),
+                  MaterialPageRoute(builder: (context) => const ColoringPage()),
                 );
               },
               child: Container(
@@ -48,10 +48,10 @@ class LeisurePageState extends State<LeisurePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Jogo de Colorir",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -69,7 +69,7 @@ class LeisurePageState extends State<LeisurePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => StoriesApp()),
+                  MaterialPageRoute(builder: (context) => const StoriesApp()),
                 );
               },
               child: Container(
@@ -80,10 +80,10 @@ class LeisurePageState extends State<LeisurePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Histórias",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -112,10 +112,10 @@ class LeisurePageState extends State<LeisurePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Brincadeiras",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -144,10 +144,10 @@ class LeisurePageState extends State<LeisurePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Esportes",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -176,10 +176,10 @@ class LeisurePageState extends State<LeisurePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Jogos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -208,10 +208,10 @@ class LeisurePageState extends State<LeisurePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Relaxamentos",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),

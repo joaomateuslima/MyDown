@@ -99,10 +99,11 @@ class _WallPostState extends State<WallPost> {
                   .collection('User Posts')
                   .doc(widget.postId)
                   .delete()
-                  .then((value) => print('Postagem excluída'))
-                  .catchError((error) => print('Falha ao excluir: $error'));
+                  .then((value) => ('Postagem excluída'))
+                  .catchError((error) => ('Falha ao excluir: $error'));
 
               //dismiss the dialog
+              // ignore: use_build_context_synchronously
               Navigator.pop(context);
             },
             child: const Text("Excluir"),
@@ -119,8 +120,8 @@ class _WallPostState extends State<WallPost> {
         color: Colors.white,
         borderRadius: BorderRadius.circular(8),
       ),
-      margin: EdgeInsets.only(top: 25, left: 25, right: 25),
-      padding: EdgeInsets.all(25),
+      margin: const EdgeInsets.only(top: 25, left: 25, right: 25),
+      padding: const EdgeInsets.all(25),
       child: Column(crossAxisAlignment: CrossAxisAlignment.start, children: [
         //wallpost
 
@@ -142,7 +143,7 @@ class _WallPostState extends State<WallPost> {
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 10,
                 ),
                 Text(widget.message),
@@ -150,7 +151,7 @@ class _WallPostState extends State<WallPost> {
                 // DELETE BUTTON
               ],
             ),
-            SizedBox(
+            const SizedBox(
               height: 10,
             ),
           ],
@@ -177,7 +178,7 @@ class _WallPostState extends State<WallPost> {
                 //like count
                 Text(
                   widget.likes.length.toString(),
-                  style: TextStyle(color: Colors.grey),
+                  style: const TextStyle(color: Colors.grey),
                 ),
                 const SizedBox(height: 10),
                 if (widget.user == currentUser!.email)

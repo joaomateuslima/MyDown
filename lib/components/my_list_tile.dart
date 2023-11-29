@@ -19,7 +19,7 @@ class MyListTile extends StatelessWidget {
       child: ListTile(
         leading: Icon(
           icon,
-          color: Color.fromRGBO(230, 171, 27, 1.0),
+          color: const Color.fromRGBO(230, 171, 27, 1.0),
         ),
         onTap: onTap,
         title: Text(

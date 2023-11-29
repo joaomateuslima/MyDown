@@ -20,7 +20,7 @@ class ExercisePageState extends State<ExercisePage> {
     return Scaffold(
       backgroundColor: Colors.grey[300],
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         title: const Text("Exercitando"),
       ),
       body: Padding(
@@ -46,10 +46,10 @@ class ExercisePageState extends State<ExercisePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Alimentação",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -78,10 +78,10 @@ class ExercisePageState extends State<ExercisePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Fala",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -111,10 +111,10 @@ class ExercisePageState extends State<ExercisePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Coordenação motora",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 18,
                       ),
                     ),
@@ -144,10 +144,10 @@ class ExercisePageState extends State<ExercisePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Área cognitiva",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -172,15 +172,15 @@ class ExercisePageState extends State<ExercisePage> {
               child: Container(
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(40),
-                  color: Color.fromARGB(255, 188, 233, 129),
+                  color: const Color.fromARGB(255, 188, 233, 129),
                 ),
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Interação social",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),
@@ -209,10 +209,10 @@ class ExercisePageState extends State<ExercisePage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Lazer",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 20,
                       ),
                     ),

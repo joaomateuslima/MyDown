@@ -16,15 +16,15 @@ class CoordenationPageState extends State<CoordenationPage> {
     return Scaffold(
       appBar: AppBar(
         backgroundColor: const Color.fromARGB(255, 255, 71, 170),
-        title: Text(
+        title: const Text(
           "Coordenação Motora",
           style: TextStyle(
-            color: const Color.fromARGB(255, 255, 255, 255),
+            color: Color.fromARGB(255, 255, 255, 255),
             fontSize: 25,
           ),
         ),
       ),
-      backgroundColor: Color.fromARGB(255, 255, 124, 198),
+      backgroundColor: const Color.fromARGB(255, 255, 124, 198),
       body: Padding(
         padding: const EdgeInsets.all(5.0),
         child: GridView.count(
@@ -37,7 +37,7 @@ class CoordenationPageState extends State<CoordenationPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => PuzzleGrid()),
+                  MaterialPageRoute(builder: (context) => const PuzzleGrid()),
                 );
               },
               child: Container(
@@ -48,10 +48,10 @@ class CoordenationPageState extends State<CoordenationPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Quebra-Cabeça",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -69,7 +69,7 @@ class CoordenationPageState extends State<CoordenationPage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => HomePage()),
+                  MaterialPageRoute(builder: (context) => const HomePage()),
                 );
               },
               child: Container(
@@ -80,10 +80,10 @@ class CoordenationPageState extends State<CoordenationPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Bola",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -112,10 +112,10 @@ class CoordenationPageState extends State<CoordenationPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Dança",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -144,10 +144,10 @@ class CoordenationPageState extends State<CoordenationPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Posições",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),
@@ -176,10 +176,10 @@ class CoordenationPageState extends State<CoordenationPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Exercícios",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 25,
                       ),
                     ),
@@ -208,10 +208,10 @@ class CoordenationPageState extends State<CoordenationPage> {
                 child: Column(
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
-                    Text(
+                    const Text(
                       "Dicas",
                       style: TextStyle(
-                        color: const Color.fromARGB(255, 0, 0, 0),
+                        color: Color.fromARGB(255, 0, 0, 0),
                         fontSize: 30,
                       ),
                     ),

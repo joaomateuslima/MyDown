@@ -99,7 +99,7 @@ class _RegisterPageState extends State<RegisterPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        backgroundColor: Color.fromRGBO(0, 31, 89, 1.0),
+        backgroundColor: const Color.fromRGBO(0, 31, 89, 1.0),
         body: SingleChildScrollView(
             child: Center(
                 child: Padding(
@@ -120,7 +120,7 @@ class _RegisterPageState extends State<RegisterPage> {
               const SizedBox(height: 40),
 
               //welcome back message
-              Text(
+              const Text(
                 "Vamos criar uma conta no MyDown!",
                 style: TextStyle(
                   color: Colors.white,
@@ -162,7 +162,7 @@ class _RegisterPageState extends State<RegisterPage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.center,
                 children: [
-                  Text(
+                  const Text(
                     "Já possui uma conta?",
                     style: TextStyle(
                       color: Colors.white,

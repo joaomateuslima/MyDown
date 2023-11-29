@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 
 class FoodGame extends StatefulWidget {
+  const FoodGame({super.key});
+
   @override
+  // ignore: library_private_types_in_public_api
   _FoodGameState createState() => _FoodGameState();
 }
 
@@ -51,7 +54,7 @@ class _FoodGameState extends State<FoodGame> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Arraste as comidinhas'),
+        title: const Text('Arraste as comidinhas'),
       ),
       body: SingleChildScrollView(
         padding: const EdgeInsets.all(16.0),
@@ -78,7 +81,7 @@ class _FoodGameState extends State<FoodGame> {
                 );
               }).toList(),
             ),
-            Spacer(),
+            const Spacer(),
             Column(
               children: items2.map((item) {
                 return DragTarget<ItemModel>(
@@ -98,15 +101,15 @@ class _FoodGameState extends State<FoodGame> {
                         width: 100,
                         alignment: Alignment.center,
                         margin: const EdgeInsets.all(8.0),
+                        color: item.color,
                         child: Text(
                           item.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0,
                           ),
                         ),
-                        color: item.color,
                       );
                     } else {
                       return Container(
@@ -117,7 +120,7 @@ class _FoodGameState extends State<FoodGame> {
                         margin: const EdgeInsets.all(8.0),
                         child: Text(
                           item.name,
-                          style: TextStyle(
+                          style: const TextStyle(
                             color: Colors.white,
                             fontWeight: FontWeight.bold,
                             fontSize: 18.0,

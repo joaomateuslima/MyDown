@@ -7,9 +7,9 @@ class MyDown extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color.fromARGB(255, 4, 33, 85),
+      backgroundColor: const Color.fromARGB(255, 4, 33, 85),
       appBar: AppBar(
-        backgroundColor: Color.fromRGBO(20, 61, 137, 1.0),
+        backgroundColor: const Color.fromRGBO(20, 61, 137, 1.0),
         title: const Text('My Down'),
       ),
       body: Center(
@@ -18,7 +18,7 @@ class MyDown extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => AuthPage(),
+                builder: (context) => const AuthPage(),
               ),
             );
           },
