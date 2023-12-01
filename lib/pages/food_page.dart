@@ -26,11 +26,11 @@ class FoodPageState extends State<FoodPage> {
       ),
       backgroundColor: const Color.fromARGB(255, 213, 251, 254),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
@@ -52,12 +52,12 @@ class FoodPageState extends State<FoodPage> {
                       "Pratos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 18,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/comida4.png',
-                      width: 150,
+                      width: 120,
                     ),
                   ],
                 ),
@@ -84,12 +84,12 @@ class FoodPageState extends State<FoodPage> {
                       "Cardápio",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/comida5.png',
-                      width: 150,
+                      width: 120,
                     ),
                   ],
                 ),
@@ -113,15 +113,15 @@ class FoodPageState extends State<FoodPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "ligue as Comidinhas",
+                      "Arraste as Comidinhas",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 18,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/comida3.png',
-                      width: 150,
+                      width: 127,
                     ),
                   ],
                 ),
@@ -148,7 +148,7 @@ class FoodPageState extends State<FoodPage> {
                       "Dicas",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -177,10 +177,10 @@ class FoodPageState extends State<FoodPage> {
                   mainAxisAlignment: MainAxisAlignment.center,
                   children: [
                     const Text(
-                      "Mào na massa",
+                      "Mão na massa",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -212,12 +212,12 @@ class FoodPageState extends State<FoodPage> {
                       "Temperos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/comida.png',
-                      width: 110,
+                      width: 130,
                     ),
                   ],
                 ),

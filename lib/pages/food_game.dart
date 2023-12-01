@@ -1,10 +1,15 @@
 import 'package:flutter/material.dart';
 
+void main() {
+  runApp(MaterialApp(
+    home: FoodGame(),
+  ));
+}
+
 class FoodGame extends StatefulWidget {
-  const FoodGame({super.key});
+  const FoodGame({Key? key}) : super(key: key);
 
   @override
-  // ignore: library_private_types_in_public_api
   _FoodGameState createState() => _FoodGameState();
 }
 
@@ -50,6 +55,33 @@ class _FoodGameState extends State<FoodGame> {
     items2.shuffle();
   }
 
+  void showCongratulationsPopup(BuildContext context) {
+    showDialog(
+      context: context,
+      builder: (BuildContext context) {
+        return AlertDialog(
+          title: const Text('Parabéns!'),
+          content: const Text('Você concluiu o jogo!'),
+          actions: <Widget>[
+            TextButton(
+              onPressed: () {
+                resetGame();
+                Navigator.of(context).pop();
+              },
+              child: const Text('OK'),
+            ),
+          ],
+        );
+      },
+    );
+  }
+
+  void resetGame() {
+    setState(() {
+      initGame();
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -90,6 +122,10 @@ class _FoodGameState extends State<FoodGame> {
                       setState(() {
                         items.remove(receivedItem);
                         items2.remove(item);
+
+                        if (items.isEmpty && items2.isEmpty) {
+                          showCongratulationsPopup(context);
+                        }
                       });
                     }
                   },

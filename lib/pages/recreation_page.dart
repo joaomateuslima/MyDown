@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:my_down_project/pages/home_page.dart';
-import 'package:my_down_project/pages/paint_game.dart';
 import 'package:my_down_project/pages/stories_page.dart';
 
 class LeisurePage extends StatefulWidget {
@@ -26,18 +25,18 @@ class LeisurePageState extends State<LeisurePage> {
       ),
       backgroundColor: const Color.fromARGB(255, 255, 174, 87),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => const ColoringPage()),
+                  MaterialPageRoute(builder: (context) => const HomePage()),
                 );
               },
               child: Container(
@@ -52,7 +51,7 @@ class LeisurePageState extends State<LeisurePage> {
                       "Jogo de Colorir",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -84,12 +83,12 @@ class LeisurePageState extends State<LeisurePage> {
                       "Histórias",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/book.png',
-                      width: 140,
+                      width: 138,
                     ),
                   ],
                 ),
@@ -116,12 +115,12 @@ class LeisurePageState extends State<LeisurePage> {
                       "Brincadeiras",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/dinossauro.png',
-                      width: 150,
+                      width: 138,
                     ),
                   ],
                 ),
@@ -148,12 +147,12 @@ class LeisurePageState extends State<LeisurePage> {
                       "Esportes",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/esportes.png',
-                      width: 140,
+                      width: 138,
                     ),
                   ],
                 ),
@@ -180,12 +179,12 @@ class LeisurePageState extends State<LeisurePage> {
                       "Jogos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/brincando.png',
-                      width: 150,
+                      width: 130,
                     ),
                   ],
                 ),
@@ -212,12 +211,12 @@ class LeisurePageState extends State<LeisurePage> {
                       "Relaxamentos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/estrela.png',
-                      width: 140,
+                      width: 138,
                     ),
                   ],
                 ),

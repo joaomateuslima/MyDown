@@ -25,11 +25,11 @@ class TalkPageState extends State<TalkPage> {
       ),
       backgroundColor: const Color.fromARGB(255, 249, 247, 190),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
@@ -52,12 +52,12 @@ class TalkPageState extends State<TalkPage> {
                       "Jogo das Palavras",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/animais.png',
-                      width: 110,
+                      width: 120,
                     ),
                   ],
                 ),
@@ -84,7 +84,7 @@ class TalkPageState extends State<TalkPage> {
                       "Frases",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 26,
+                        fontSize: 19,
                       ),
                     ),
                     Image.asset(
@@ -116,7 +116,7 @@ class TalkPageState extends State<TalkPage> {
                       "Roteiro de teatro",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 22,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -148,7 +148,7 @@ class TalkPageState extends State<TalkPage> {
                       "Jogo de Sílabas",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 22,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -180,7 +180,7 @@ class TalkPageState extends State<TalkPage> {
                       "Exercícios Bucais",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -212,7 +212,7 @@ class TalkPageState extends State<TalkPage> {
                       "Rimas e Canções",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(

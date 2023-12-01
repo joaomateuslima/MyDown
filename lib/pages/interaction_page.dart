@@ -25,11 +25,11 @@ class InteractionPageState extends State<InteractionPage> {
       ),
       backgroundColor: const Color.fromARGB(255, 232, 247, 189),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
@@ -52,7 +52,7 @@ class InteractionPageState extends State<InteractionPage> {
                       "Família",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 28,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -84,7 +84,7 @@ class InteractionPageState extends State<InteractionPage> {
                       "Crianças",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -116,7 +116,7 @@ class InteractionPageState extends State<InteractionPage> {
                       "Pedagogos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -148,7 +148,7 @@ class InteractionPageState extends State<InteractionPage> {
                       "Adultos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -180,12 +180,12 @@ class InteractionPageState extends State<InteractionPage> {
                       "Profissionais",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/medicos.png',
-                      width: 150,
+                      width: 130,
                     ),
                   ],
                 ),
@@ -212,7 +212,7 @@ class InteractionPageState extends State<InteractionPage> {
                       "Amigos Atípicos",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(

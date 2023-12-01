@@ -134,13 +134,12 @@ class _WallPostState extends State<WallPost> {
                 //message
                 Row(
                   children: [
-                    Text(
-                      widget.user,
-                      style: TextStyle(color: Colors.grey[400]),
-                    ),
-                    const SizedBox(
-                      height: 5,
-                    ),
+                    Expanded(
+                      child: Text(
+                        widget.user,
+                        style: TextStyle(color: Colors.grey[400]),
+                      ),
+                    )
                   ],
                 ),
                 const SizedBox(

@@ -26,11 +26,11 @@ class CoordenationPageState extends State<CoordenationPage> {
       ),
       backgroundColor: const Color.fromARGB(255, 255, 124, 198),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
@@ -52,7 +52,7 @@ class CoordenationPageState extends State<CoordenationPage> {
                       "Quebra-Cabeça",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 18,
                       ),
                     ),
                     Image.asset(
@@ -84,7 +84,7 @@ class CoordenationPageState extends State<CoordenationPage> {
                       "Bola",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 22,
                       ),
                     ),
                     Image.asset(
@@ -116,12 +116,12 @@ class CoordenationPageState extends State<CoordenationPage> {
                       "Dança",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/coordDanca.png',
-                      width: 150,
+                      width: 130,
                     ),
                   ],
                 ),
@@ -148,12 +148,12 @@ class CoordenationPageState extends State<CoordenationPage> {
                       "Posições",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/coordPosicoes.png',
-                      width: 100,
+                      width: 90,
                     ),
                   ],
                 ),
@@ -180,12 +180,12 @@ class CoordenationPageState extends State<CoordenationPage> {
                       "Exercícios",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/exercicios.png',
-                      width: 100,
+                      width: 93,
                     ),
                   ],
                 ),
@@ -212,12 +212,12 @@ class CoordenationPageState extends State<CoordenationPage> {
                       "Dicas",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/coordDicas.png',
-                      width: 150,
+                      width: 138,
                     ),
                   ],
                 ),

@@ -22,10 +22,11 @@ class _StoriesAppState extends State<StoriesApp> {
         backgroundColor: const Color.fromARGB(255, 255, 132, 0),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
-        child: GridView(
-            gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 2, mainAxisSpacing: 60, crossAxisSpacing: 10),
+        padding: EdgeInsets.zero,
+        child: GridView.count(
+            crossAxisCount: 1,
+            mainAxisSpacing: 50,
+            crossAxisSpacing: 2,
             children: [
               InkWell(
                 onTap: () {
@@ -43,8 +44,11 @@ class _StoriesAppState extends State<StoriesApp> {
                     mainAxisAlignment: MainAxisAlignment.center,
                     children: [
                       const Text(
-                        "Alibaba",
-                        style: TextStyle(color: Colors.black, fontSize: 35),
+                        "Alibabá e os 40 ladrões",
+                        style: TextStyle(color: Colors.black, fontSize: 27),
+                      ),
+                      SizedBox(
+                        height: 12,
                       ),
                       Image.asset(
                         'lib/assets/images/alibaba.png',
@@ -72,6 +76,9 @@ class _StoriesAppState extends State<StoriesApp> {
                         "Chapéuzinho Vermelho",
                         style: TextStyle(color: Colors.black, fontSize: 18),
                       ),
+                      SizedBox(
+                        height: 12,
+                      ),
                       Image.asset(
                         'lib/assets/images/chapeuzinho.png',
                         width: 200,
@@ -98,6 +105,9 @@ class _StoriesAppState extends State<StoriesApp> {
                         "Pinóquio",
                         style: TextStyle(color: Colors.black, fontSize: 30),
                       ),
+                      SizedBox(
+                        height: 12,
+                      ),
                       Image.asset(
                         'lib/assets/images/pinoquio.png',
                         width: 150,
@@ -123,6 +133,9 @@ class _StoriesAppState extends State<StoriesApp> {
                       const Text(
                         "Os Três Porquinhos",
                         style: TextStyle(color: Colors.black, fontSize: 21),
+                      ),
+                      SizedBox(
+                        height: 12,
                       ),
                       Image.asset(
                         'lib/assets/images/porquinhos.png',

@@ -4,7 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:my_down_project/components/text_box.dart';
 
 class ProfilePage extends StatefulWidget {
-  const ProfilePage({super.key});
+  const ProfilePage({Key? key}) : super(key: key);
 
   @override
   State<ProfilePage> createState() => _ProfilePageState();
@@ -81,8 +81,8 @@ class _ProfilePageState extends State<ProfilePage> {
             .doc(currentUser.email)
             .snapshots(),
         builder: (context, snapshot) {
-          //get the user data
-          if (snapshot.hasData) {
+          // Verifique se há dados e se a propriedade data não é nula
+          if (snapshot.hasData && snapshot.data != null) {
             final userData = snapshot.data!.data() as Map<String, dynamic>;
             return ListView(
               children: [
@@ -143,6 +143,7 @@ class _ProfilePageState extends State<ProfilePage> {
               child: Text('Error${snapshot.error}'),
             );
           }
+
           return const Center(
             child: CircularProgressIndicator(),
           );

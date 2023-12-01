@@ -10,6 +10,7 @@ class MyListTile extends StatelessWidget {
     required this.icon,
     required this.text,
     required this.onTap,
+    required int size,
   });
 
   @override

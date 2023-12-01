@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:my_down_project/pages/home_page.dart';
 import 'package:my_down_project/pages/memory_game_page.dart';
-import 'package:my_down_project/pages/wordsearch.dart';
 
 class CognitivePage extends StatefulWidget {
   const CognitivePage({Key? key}) : super(key: key);
@@ -26,11 +25,11 @@ class CognitivePageState extends State<CognitivePage> {
       ),
       backgroundColor: const Color.fromARGB(255, 154, 127, 223),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
@@ -52,7 +51,7 @@ class CognitivePageState extends State<CognitivePage> {
                       "Jogo da Memória",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -69,7 +68,7 @@ class CognitivePageState extends State<CognitivePage> {
               onTap: () {
                 Navigator.push(
                   context,
-                  MaterialPageRoute(builder: (context) => WordSearch()),
+                  MaterialPageRoute(builder: (context) => HomePage()),
                 );
               },
               child: Container(
@@ -84,7 +83,7 @@ class CognitivePageState extends State<CognitivePage> {
                       "Caça-Palavras",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 26,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -116,7 +115,7 @@ class CognitivePageState extends State<CognitivePage> {
                       "Charadas",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -148,7 +147,7 @@ class CognitivePageState extends State<CognitivePage> {
                       "Invenções",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 30,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -180,7 +179,7 @@ class CognitivePageState extends State<CognitivePage> {
                       "Curiosidades",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 26,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(
@@ -212,7 +211,7 @@ class CognitivePageState extends State<CognitivePage> {
                       "Matemática",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 25,
+                        fontSize: 15,
                       ),
                     ),
                     Image.asset(

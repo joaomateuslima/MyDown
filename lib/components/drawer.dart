@@ -30,13 +30,15 @@ class MyDrawer extends StatelessWidget {
               //home list tile
               MyListTile(
                 icon: Icons.message,
-                text: 'M Y  D O W N',
+                text: 'MY DOWN',
+                size: 16,
                 onTap: () => Navigator.pop(context),
               ),
 
               MyListTile(
                 icon: Icons.abc_sharp,
-                text: 'E X E R C I T A N D O',
+                text: 'EXERCITANDO',
+                size: 16,
                 onTap: () {
                   Navigator.push(
                     context,
@@ -48,7 +50,8 @@ class MyDrawer extends StatelessWidget {
 
               MyListTile(
                 icon: Icons.info,
-                text: 'C O N S U L T O R I A',
+                text: 'CONSULTORIA',
+                size: 16,
                 onTap: () {
                   Navigator.push(
                     context,
@@ -59,7 +62,8 @@ class MyDrawer extends StatelessWidget {
               //profile list tile
               MyListTile(
                 icon: Icons.person,
-                text: 'P E R F I L',
+                text: 'PERFIL',
+                size: 10,
                 onTap: onProfileTap,
               ),
             ],
@@ -69,7 +73,8 @@ class MyDrawer extends StatelessWidget {
             padding: const EdgeInsets.only(bottom: 25.0),
             child: MyListTile(
               icon: Icons.logout,
-              text: 'S A I R',
+              text: 'SAIR',
+              size: 16,
               onTap: onSignOut,
             ),
           ),

@@ -108,7 +108,7 @@ class _RegisterPageState extends State<RegisterPage> {
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
               const SizedBox(
-                height: 100,
+                height: 30,
               ),
               //logo
               Image.asset(

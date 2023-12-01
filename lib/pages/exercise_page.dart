@@ -24,11 +24,11 @@ class ExercisePageState extends State<ExercisePage> {
         title: const Text("Exercitando"),
       ),
       body: Padding(
-        padding: const EdgeInsets.all(5.0),
+        padding: EdgeInsets.zero,
         child: GridView.count(
           crossAxisCount: 2,
-          mainAxisSpacing: 10,
-          crossAxisSpacing: 10,
+          mainAxisSpacing: 50,
+          crossAxisSpacing: 5,
           children: [
             //Alimentacao
             InkWell(
@@ -40,7 +40,7 @@ class ExercisePageState extends State<ExercisePage> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(20),
                   color: const Color.fromARGB(255, 185, 234, 239),
                 ),
                 child: Column(
@@ -50,12 +50,12 @@ class ExercisePageState extends State<ExercisePage> {
                       "Alimentação",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/alimentacao.png',
-                      width: 150,
+                      width: 142,
                     ),
                   ],
                 ),
@@ -72,7 +72,7 @@ class ExercisePageState extends State<ExercisePage> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(20),
                   color: const Color.fromARGB(255, 249, 246, 190),
                 ),
                 child: Column(
@@ -82,12 +82,12 @@ class ExercisePageState extends State<ExercisePage> {
                       "Fala",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/fala.png',
-                      width: 150,
+                      width: 139,
                     ),
                   ],
                 ),
@@ -105,7 +105,7 @@ class ExercisePageState extends State<ExercisePage> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(20),
                   color: const Color.fromARGB(255, 255, 170, 216),
                 ),
                 child: Column(
@@ -115,12 +115,12 @@ class ExercisePageState extends State<ExercisePage> {
                       "Coordenação motora",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 18,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/coordenacao.png',
-                      width: 140,
+                      width: 142,
                     ),
                   ],
                 ),
@@ -138,7 +138,7 @@ class ExercisePageState extends State<ExercisePage> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(20),
                   color: const Color.fromARGB(255, 186, 156, 255),
                 ),
                 child: Column(
@@ -148,7 +148,7 @@ class ExercisePageState extends State<ExercisePage> {
                       "Área cognitiva",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
@@ -171,7 +171,7 @@ class ExercisePageState extends State<ExercisePage> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(20),
                   color: const Color.fromARGB(255, 188, 233, 129),
                 ),
                 child: Column(
@@ -181,12 +181,12 @@ class ExercisePageState extends State<ExercisePage> {
                       "Interação social",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/interacao.png',
-                      width: 150,
+                      width: 190,
                     ),
                   ],
                 ),
@@ -203,7 +203,7 @@ class ExercisePageState extends State<ExercisePage> {
               },
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(40),
+                  borderRadius: BorderRadius.circular(20),
                   color: const Color.fromARGB(255, 255, 203, 148),
                 ),
                 child: Column(
@@ -213,12 +213,12 @@ class ExercisePageState extends State<ExercisePage> {
                       "Lazer",
                       style: TextStyle(
                         color: Color.fromARGB(255, 0, 0, 0),
-                        fontSize: 20,
+                        fontSize: 12,
                       ),
                     ),
                     Image.asset(
                       'lib/assets/images/lazerr.png',
-                      width: 110,
+                      width: 140,
                     ),
                   ],
                 ),
