@@ -1,6 +1,6 @@
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
-import 'package:my_down_project/auth/auth.dart';
+import 'package:my_down_project/pages/mydown.dart';
 import 'package:my_down_project/firebase_options.dart';
 
 void main() async {
@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return const MaterialApp(
       debugShowCheckedModeBanner: false,
-      home: AuthPage(),
+      home: MyDown(),
     );
   }
 }
